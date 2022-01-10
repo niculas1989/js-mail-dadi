@@ -32,11 +32,22 @@ console.log(randomComputerNumber);
 resultComputerElement.innerText = randomComputerNumber;
 
 
+const resultFinalElement = document.getElementById('final-result');
+let result = '';
 if (randomUmanNumber > randomComputerNumber) {
     console.log("Ha vinto l'umano!");
+    result = "Ha vinto l'umano!";
 } else if (randomUmanNumber == randomComputerNumber) {
     console.log('Avete pareggiato!');
+    result = "Avete pareggiato!";
 } else {
     console.log("Ha vinto il computer!");
+    result = "Ha vinto il computer!";
 }
+
+resultFinalElement.innerText = result;
+
+
+
+
 
