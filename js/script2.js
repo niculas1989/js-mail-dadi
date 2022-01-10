@@ -17,3 +17,7 @@ Stampare in console i tiri di dado e il risultato.
 
 5 - e se pareggiano?
 */
+
+
+const randomNumber = Math.round(Math.random() * 5) + 1;
+console.log(randomNumber);
