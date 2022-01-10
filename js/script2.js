@@ -19,5 +19,16 @@ Stampare in console i tiri di dado e il risultato.
 */
 
 
-const randomNumber = Math.round(Math.random() * 5) + 1;
-console.log(randomNumber);
+const randomUmanNumber = parseInt(Math.round(Math.random() * 5) + 1);
+console.log(randomUmanNumber);
+
+const randomComputerNumber = parseInt(Math.round(Math.random() * 5) + 1);
+console.log(randomComputerNumber);
+
+if (randomUmanNumber > randomComputerNumber) {
+    console.log("Ha vinto l'umano!");
+} else if (randomUmanNumber == randomComputerNumber) {
+    console.log('Avete pareggiato!');
+} else {
+    console.log("Ha vinto il computer!");
+}
