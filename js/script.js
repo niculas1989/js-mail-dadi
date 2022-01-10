@@ -32,7 +32,7 @@ controlla che sia nella lista di chi può accedere, stampa un messaggio appropri
 // }
 
 
-const email = ['nicolas.maranzano@libero.it', 'gmail.com', 'yahoo.it'];
+const email = ['nicolas.maranzano@libero.it', 'gino@gmail.com', 'pippo@yahoo.it'];
 let yourMail = prompt("Scrivi di seguito la tua mail", 'nicolas.maranzano@libero.it');
 
 for (let i = 0; i < email.length; i++) {
