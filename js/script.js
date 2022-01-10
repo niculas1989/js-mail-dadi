@@ -32,17 +32,39 @@ controlla che sia nella lista di chi può accedere, stampa un messaggio appropri
 // }
 
 
+// const email = ['nicolas.maranzano@libero.it', 'gino@gmail.com', 'pippo@yahoo.it'];
+// let yourMail = prompt("Scrivi di seguito la tua mail", 'nicolas.maranzano@libero.it');
+
+// for (let i = 0; i < email.length; i++) {
+//     switch (email) {
+//         case 'nicolas.maranzano@libero.it':
+//             alert("Login effettuata con successo");
+//             break;
+//         default:
+//             alert("Nome utente o password non corrette");
+//     }
+// }
+
+
 const email = ['nicolas.maranzano@libero.it', 'gino@gmail.com', 'pippo@yahoo.it'];
 let yourMail = prompt("Scrivi di seguito la tua mail", 'nicolas.maranzano@libero.it');
 
+let founded = false;
+
 for (let i = 0; i < email.length; i++) {
-    switch (email) {
-        case 'nicolas.maranzano@libero.it':
-            alert("Login effettuata con successo");
-            break;
-        default:
-            alert("Nome utente o password non corrette");
+    if (yourMail === email[i]) {
+        founded = true;
     }
 }
+
+if (founded === true) {
+    alert("Login effettuata con successo");
+} else {
+    alert("Nome utente o password non corrette");
+}
+
+
+
+
 
 
