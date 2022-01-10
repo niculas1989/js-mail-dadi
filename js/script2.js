@@ -19,11 +19,18 @@ Stampare in console i tiri di dado e il risultato.
 */
 
 
+const resultHumanElement = document.getElementById('human-result');
 const randomUmanNumber = parseInt(Math.round(Math.random() * 5) + 1);
 console.log(randomUmanNumber);
+resultHumanElement.innerText = randomUmanNumber;
 
+
+
+const resultComputerElement = document.getElementById('pc-result');
 const randomComputerNumber = parseInt(Math.round(Math.random() * 5) + 1);
 console.log(randomComputerNumber);
+resultComputerElement.innerText = randomComputerNumber;
+
 
 if (randomUmanNumber > randomComputerNumber) {
     console.log("Ha vinto l'umano!");
@@ -32,3 +39,4 @@ if (randomUmanNumber > randomComputerNumber) {
 } else {
     console.log("Ha vinto il computer!");
 }
+
